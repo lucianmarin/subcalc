@@ -53,6 +53,7 @@ textarea {
 
 textarea:focus { outline: 0 none; }
 
+/* In React, we'll map p tags directly, so this selector stays valid */
 #response p {
 	border-bottom: var(--gainsboro) 1px solid;
 	overflow: hidden;
@@ -86,5 +87,6 @@ textarea:focus { outline: 0 none; }
 	font-family: "Intel One Mono";
 	font-style: normal;
 	font-weight: normal;
-	src: url(intelone/regular.woff2) format("woff2");
+	/* Changed relative path to absolute path for Vite public dir */
+	src: url(/static/intelone/regular.woff2) format("woff2");
 }
